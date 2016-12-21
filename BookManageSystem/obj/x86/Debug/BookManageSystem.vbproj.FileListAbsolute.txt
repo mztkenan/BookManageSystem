@@ -1,0 +1,13 @@
+c:\users\123\documents\visual studio 2010\Projects\BookManageSystem\BookManageSystem\bin\Debug\BookManageSystem.exe
+c:\users\123\documents\visual studio 2010\Projects\BookManageSystem\BookManageSystem\bin\Debug\BookManageSystem.pdb
+c:\users\123\documents\visual studio 2010\Projects\BookManageSystem\BookManageSystem\bin\Debug\BookManageSystem.xml
+c:\users\123\documents\visual studio 2010\Projects\BookManageSystem\BookManageSystem\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\123\documents\visual studio 2010\Projects\BookManageSystem\BookManageSystem\obj\x86\Debug\BookManageSystem.Login.resources
+c:\users\123\documents\visual studio 2010\Projects\BookManageSystem\BookManageSystem\obj\x86\Debug\BookManageSystem.Resources.resources
+c:\users\123\documents\visual studio 2010\Projects\BookManageSystem\BookManageSystem\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\123\documents\visual studio 2010\Projects\BookManageSystem\BookManageSystem\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\123\documents\visual studio 2010\Projects\BookManageSystem\BookManageSystem\obj\x86\Debug\BookManageSystem.exe
+c:\users\123\documents\visual studio 2010\Projects\BookManageSystem\BookManageSystem\obj\x86\Debug\BookManageSystem.xml
+c:\users\123\documents\visual studio 2010\Projects\BookManageSystem\BookManageSystem\obj\x86\Debug\BookManageSystem.pdb
+c:\users\123\documents\visual studio 2010\Projects\BookManageSystem\BookManageSystem\obj\x86\Debug\BookManageSystem.Form1.resources
+c:\users\123\documents\visual studio 2010\Projects\BookManageSystem\BookManageSystem\obj\x86\Debug\BookManageSystem.Form23.resources

@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8FDEB857-8B20-40A4-BD8B-28593AB270DD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>BookManageSystem.My.MyApplication</StartupObject>
+    <RootNamespace>BookManageSystem</RootNamespace>
+    <AssemblyName>BookManageSystem</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>BookManageSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>BookManageSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminMainForm.Designer.vb">
+      <DependentUpon>AdminMainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookAdd.Designer.vb">
+      <DependentUpon>BookAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BookAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookBorrow.Designer.vb">
+      <DependentUpon>BookBorrow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BookBorrow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookInfoManagementForm.Designer.vb">
+      <DependentUpon>BookInfoManagementForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BookInfoManagementForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookReserve.Designer.vb">
+      <DependentUpon>BookReserve.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BookReserve.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BorrowAdd.Designer.vb">
+      <DependentUpon>BorrowAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BorrowAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DBConnect.vb" />
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PublisherAdd.Designer.vb">
+      <DependentUpon>PublisherAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PublisherAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PublisherInfo.Designer.vb">
+      <DependentUpon>PublisherInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PublisherInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReserveAdd.Designer.vb">
+      <DependentUpon>ReserveAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReserveAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentAdd.Designer.vb">
+      <DependentUpon>StudentAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StudentAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentInfoManagementForm.Designer.vb">
+      <DependentUpon>StudentInfoManagementForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StudentInfoManagementForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentMainForm.Designer.vb">
+      <DependentUpon>StudentMainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StudentMainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AdminMainForm.resx">
+      <DependentUpon>AdminMainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookAdd.resx">
+      <DependentUpon>BookAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookBorrow.resx">
+      <DependentUpon>BookBorrow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookInfoManagementForm.resx">
+      <DependentUpon>BookInfoManagementForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookReserve.resx">
+      <DependentUpon>BookReserve.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BorrowAdd.resx">
+      <DependentUpon>BorrowAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PublisherAdd.resx">
+      <DependentUpon>PublisherAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PublisherInfo.resx">
+      <DependentUpon>PublisherInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReserveAdd.resx">
+      <DependentUpon>ReserveAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentAdd.resx">
+      <DependentUpon>StudentAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentInfoManagementForm.resx">
+      <DependentUpon>StudentInfoManagementForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentMainForm.resx">
+      <DependentUpon>StudentMainForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
