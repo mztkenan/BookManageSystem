@@ -25,13 +25,14 @@ Partial Class BookInfoManagementForm
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.lblInput = New System.Windows.Forms.Label()
+        Me.txbInput = New System.Windows.Forms.TextBox()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.rbBookName = New System.Windows.Forms.RadioButton()
         Me.rdBookId = New System.Windows.Forms.RadioButton()
-        Me.lblInput = New System.Windows.Forms.Label()
-        Me.txbInput = New System.Windows.Forms.TextBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox2.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -58,6 +59,7 @@ Partial Class BookInfoManagementForm
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Button1)
         Me.GroupBox1.Controls.Add(Me.lblInput)
         Me.GroupBox1.Controls.Add(Me.txbInput)
         Me.GroupBox1.Controls.Add(Me.CheckBox1)
@@ -71,6 +73,22 @@ Partial Class BookInfoManagementForm
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "查询图书信息"
+        '
+        'lblInput
+        '
+        Me.lblInput.AutoSize = True
+        Me.lblInput.Location = New System.Drawing.Point(140, 73)
+        Me.lblInput.Name = "lblInput"
+        Me.lblInput.Size = New System.Drawing.Size(35, 12)
+        Me.lblInput.TabIndex = 6
+        Me.lblInput.Text = "输入:"
+        '
+        'txbInput
+        '
+        Me.txbInput.Location = New System.Drawing.Point(188, 67)
+        Me.txbInput.Name = "txbInput"
+        Me.txbInput.Size = New System.Drawing.Size(117, 21)
+        Me.txbInput.TabIndex = 5
         '
         'CheckBox1
         '
@@ -126,21 +144,14 @@ Partial Class BookInfoManagementForm
         Me.rdBookId.Text = "书号"
         Me.rdBookId.UseVisualStyleBackColor = True
         '
-        'lblInput
+        'Button1
         '
-        Me.lblInput.AutoSize = True
-        Me.lblInput.Location = New System.Drawing.Point(163, 73)
-        Me.lblInput.Name = "lblInput"
-        Me.lblInput.Size = New System.Drawing.Size(35, 12)
-        Me.lblInput.TabIndex = 6
-        Me.lblInput.Text = "输入:"
-        '
-        'txbInput
-        '
-        Me.txbInput.Location = New System.Drawing.Point(211, 67)
-        Me.txbInput.Name = "txbInput"
-        Me.txbInput.Size = New System.Drawing.Size(117, 21)
-        Me.txbInput.TabIndex = 5
+        Me.Button1.Location = New System.Drawing.Point(356, 66)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 10
+        Me.Button1.Text = "确定"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'BookInfoManagementForm
         '
@@ -168,4 +179,5 @@ Partial Class BookInfoManagementForm
     Friend WithEvents rdBookId As System.Windows.Forms.RadioButton
     Friend WithEvents lblInput As System.Windows.Forms.Label
     Friend WithEvents txbInput As System.Windows.Forms.TextBox
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class

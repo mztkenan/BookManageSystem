@@ -11,7 +11,6 @@ c:\users\123\documents\visual studio 2010\Projects\BookManageSystem\BookManageSy
 c:\users\123\documents\visual studio 2010\Projects\BookManageSystem\BookManageSystem\obj\x86\Debug\BookManageSystem.pdb
 C:\Users\123\documents\visual studio 2010\Projects\BookManageSystem\BookManageSystem\obj\x86\Debug\BookManageSystem.AdminMainForm.resources
 C:\Users\123\documents\visual studio 2010\Projects\BookManageSystem\BookManageSystem\obj\x86\Debug\BookManageSystem.BookAdd.resources
-C:\Users\123\documents\visual studio 2010\Projects\BookManageSystem\BookManageSystem\obj\x86\Debug\BookManageSystem.BookBorrow.resources
 C:\Users\123\documents\visual studio 2010\Projects\BookManageSystem\BookManageSystem\obj\x86\Debug\BookManageSystem.BookInfoManagementForm.resources
 C:\Users\123\documents\visual studio 2010\Projects\BookManageSystem\BookManageSystem\obj\x86\Debug\BookManageSystem.BookReserve.resources
 C:\Users\123\documents\visual studio 2010\Projects\BookManageSystem\BookManageSystem\obj\x86\Debug\BookManageSystem.BorrowAdd.resources
@@ -21,3 +20,6 @@ C:\Users\123\documents\visual studio 2010\Projects\BookManageSystem\BookManageSy
 C:\Users\123\documents\visual studio 2010\Projects\BookManageSystem\BookManageSystem\obj\x86\Debug\BookManageSystem.StudentAdd.resources
 C:\Users\123\documents\visual studio 2010\Projects\BookManageSystem\BookManageSystem\obj\x86\Debug\BookManageSystem.StudentInfoManagementForm.resources
 C:\Users\123\documents\visual studio 2010\Projects\BookManageSystem\BookManageSystem\obj\x86\Debug\BookManageSystem.StudentMainForm.resources
+C:\Users\123\Documents\Visual Studio 2010\Projects\BookManageSystem\BookManageSystem\obj\x86\Debug\BookManageSystem.About.resources
+C:\Users\123\Documents\Visual Studio 2010\Projects\BookManageSystem\BookManageSystem\obj\x86\Debug\BookManageSystem.BookBorrowInfo.resources
+C:\Users\123\Documents\Visual Studio 2010\Projects\BookManageSystem\BookManageSystem\obj\x86\Debug\BookManageSystem.StudentSearchBook.resources

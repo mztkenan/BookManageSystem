@@ -25,15 +25,15 @@ Partial Class BookAdd
         Me.btnCancel = New System.Windows.Forms.Button()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.tbAuthor = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.tbBookName = New System.Windows.Forms.TextBox()
+        Me.tbBookID = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.tbLocation = New System.Windows.Forms.TextBox()
+        Me.tbQuantity = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.btnConfim = New System.Windows.Forms.Button()
@@ -63,10 +63,10 @@ Partial Class BookAdd
         '
         'TabPage1
         '
-        Me.TabPage1.Controls.Add(Me.TextBox7)
+        Me.TabPage1.Controls.Add(Me.tbAuthor)
         Me.TabPage1.Controls.Add(Me.Label7)
-        Me.TabPage1.Controls.Add(Me.TextBox2)
-        Me.TabPage1.Controls.Add(Me.TextBox1)
+        Me.TabPage1.Controls.Add(Me.tbBookName)
+        Me.TabPage1.Controls.Add(Me.tbBookID)
         Me.TabPage1.Controls.Add(Me.Label2)
         Me.TabPage1.Controls.Add(Me.Label1)
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
@@ -77,12 +77,12 @@ Partial Class BookAdd
         Me.TabPage1.Text = "书籍信息"
         Me.TabPage1.UseVisualStyleBackColor = True
         '
-        'TextBox7
+        'tbAuthor
         '
-        Me.TextBox7.Location = New System.Drawing.Point(161, 228)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(100, 21)
-        Me.TextBox7.TabIndex = 5
+        Me.tbAuthor.Location = New System.Drawing.Point(161, 228)
+        Me.tbAuthor.Name = "tbAuthor"
+        Me.tbAuthor.Size = New System.Drawing.Size(100, 21)
+        Me.tbAuthor.TabIndex = 5
         '
         'Label7
         '
@@ -93,19 +93,19 @@ Partial Class BookAdd
         Me.Label7.TabIndex = 4
         Me.Label7.Text = "作者："
         '
-        'TextBox2
+        'tbBookName
         '
-        Me.TextBox2.Location = New System.Drawing.Point(161, 169)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 21)
-        Me.TextBox2.TabIndex = 3
+        Me.tbBookName.Location = New System.Drawing.Point(161, 169)
+        Me.tbBookName.Name = "tbBookName"
+        Me.tbBookName.Size = New System.Drawing.Size(100, 21)
+        Me.tbBookName.TabIndex = 3
         '
-        'TextBox1
+        'tbBookID
         '
-        Me.TextBox1.Location = New System.Drawing.Point(161, 118)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 21)
-        Me.TextBox1.TabIndex = 2
+        Me.tbBookID.Location = New System.Drawing.Point(161, 118)
+        Me.tbBookID.Name = "tbBookID"
+        Me.tbBookID.Size = New System.Drawing.Size(100, 21)
+        Me.tbBookID.TabIndex = 2
         '
         'Label2
         '
@@ -127,8 +127,8 @@ Partial Class BookAdd
         '
         'TabPage2
         '
-        Me.TabPage2.Controls.Add(Me.TextBox3)
-        Me.TabPage2.Controls.Add(Me.TextBox4)
+        Me.TabPage2.Controls.Add(Me.tbLocation)
+        Me.TabPage2.Controls.Add(Me.tbQuantity)
         Me.TabPage2.Controls.Add(Me.Label3)
         Me.TabPage2.Controls.Add(Me.Label4)
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
@@ -139,19 +139,19 @@ Partial Class BookAdd
         Me.TabPage2.Text = "库存信息"
         Me.TabPage2.UseVisualStyleBackColor = True
         '
-        'TextBox3
+        'tbLocation
         '
-        Me.TextBox3.Location = New System.Drawing.Point(163, 183)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 21)
-        Me.TextBox3.TabIndex = 7
+        Me.tbLocation.Location = New System.Drawing.Point(163, 183)
+        Me.tbLocation.Name = "tbLocation"
+        Me.tbLocation.Size = New System.Drawing.Size(100, 21)
+        Me.tbLocation.TabIndex = 7
         '
-        'TextBox4
+        'tbQuantity
         '
-        Me.TextBox4.Location = New System.Drawing.Point(163, 132)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 21)
-        Me.TextBox4.TabIndex = 6
+        Me.tbQuantity.Location = New System.Drawing.Point(163, 132)
+        Me.tbQuantity.Name = "tbQuantity"
+        Me.tbQuantity.Size = New System.Drawing.Size(100, 21)
+        Me.tbQuantity.TabIndex = 6
         '
         'Label3
         '
@@ -201,15 +201,15 @@ Partial Class BookAdd
     Friend WithEvents btnCancel As System.Windows.Forms.Button
     Friend WithEvents TabControl1 As System.Windows.Forms.TabControl
     Friend WithEvents TabPage1 As System.Windows.Forms.TabPage
-    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
+    Friend WithEvents tbAuthor As System.Windows.Forms.TextBox
     Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents tbBookName As System.Windows.Forms.TextBox
+    Friend WithEvents tbBookID As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents TabPage2 As System.Windows.Forms.TabPage
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents tbLocation As System.Windows.Forms.TextBox
+    Friend WithEvents tbQuantity As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents btnConfim As System.Windows.Forms.Button

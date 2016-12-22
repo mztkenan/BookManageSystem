@@ -24,12 +24,12 @@ Partial Class PublisherAdd
     Private Sub InitializeComponent()
         Me.btnCancel = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.tbTelegram = New System.Windows.Forms.TextBox()
+        Me.tbPublisher = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.tbLocation = New System.Windows.Forms.TextBox()
+        Me.tbTel = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
@@ -55,19 +55,19 @@ Partial Class PublisherAdd
         Me.Button1.Text = "确定"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'TextBox2
+        'tbTelegram
         '
-        Me.TextBox2.Location = New System.Drawing.Point(154, 121)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 21)
-        Me.TextBox2.TabIndex = 12
+        Me.tbTelegram.Location = New System.Drawing.Point(154, 121)
+        Me.tbTelegram.Name = "tbTelegram"
+        Me.tbTelegram.Size = New System.Drawing.Size(100, 21)
+        Me.tbTelegram.TabIndex = 12
         '
-        'TextBox1
+        'tbPublisher
         '
-        Me.TextBox1.Location = New System.Drawing.Point(154, 70)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 21)
-        Me.TextBox1.TabIndex = 11
+        Me.tbPublisher.Location = New System.Drawing.Point(154, 70)
+        Me.tbPublisher.Name = "tbPublisher"
+        Me.tbPublisher.Size = New System.Drawing.Size(100, 21)
+        Me.tbPublisher.TabIndex = 11
         '
         'Label2
         '
@@ -87,19 +87,19 @@ Partial Class PublisherAdd
         Me.Label1.TabIndex = 9
         Me.Label1.Text = "出版社名："
         '
-        'TextBox3
+        'tbLocation
         '
-        Me.TextBox3.Location = New System.Drawing.Point(154, 244)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 21)
-        Me.TextBox3.TabIndex = 16
+        Me.tbLocation.Location = New System.Drawing.Point(154, 244)
+        Me.tbLocation.Name = "tbLocation"
+        Me.tbLocation.Size = New System.Drawing.Size(100, 21)
+        Me.tbLocation.TabIndex = 16
         '
-        'TextBox4
+        'tbTel
         '
-        Me.TextBox4.Location = New System.Drawing.Point(154, 193)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 21)
-        Me.TextBox4.TabIndex = 15
+        Me.tbTel.Location = New System.Drawing.Point(154, 193)
+        Me.tbTel.Name = "tbTel"
+        Me.tbTel.Size = New System.Drawing.Size(100, 21)
+        Me.tbTel.TabIndex = 15
         '
         'Label3
         '
@@ -132,10 +132,10 @@ Partial Class PublisherAdd
         '
         Me.GroupBox2.Controls.Add(Me.Label1)
         Me.GroupBox2.Controls.Add(Me.Label2)
-        Me.GroupBox2.Controls.Add(Me.TextBox3)
-        Me.GroupBox2.Controls.Add(Me.TextBox1)
-        Me.GroupBox2.Controls.Add(Me.TextBox4)
-        Me.GroupBox2.Controls.Add(Me.TextBox2)
+        Me.GroupBox2.Controls.Add(Me.tbLocation)
+        Me.GroupBox2.Controls.Add(Me.tbPublisher)
+        Me.GroupBox2.Controls.Add(Me.tbTel)
+        Me.GroupBox2.Controls.Add(Me.tbTelegram)
         Me.GroupBox2.Controls.Add(Me.Label3)
         Me.GroupBox2.Controls.Add(Me.Label4)
         Me.GroupBox2.Location = New System.Drawing.Point(55, 56)
@@ -163,12 +163,12 @@ Partial Class PublisherAdd
     End Sub
     Friend WithEvents btnCancel As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents tbTelegram As System.Windows.Forms.TextBox
+    Friend WithEvents tbPublisher As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents tbLocation As System.Windows.Forms.TextBox
+    Friend WithEvents tbTel As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox

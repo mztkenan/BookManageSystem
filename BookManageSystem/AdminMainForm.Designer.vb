@@ -65,13 +65,13 @@ Partial Class AdminMainForm
         '录入ToolStripMenuItem
         '
         Me.录入ToolStripMenuItem.Name = "录入ToolStripMenuItem"
-        Me.录入ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.录入ToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
         Me.录入ToolStripMenuItem.Text = "图书录入"
         '
         '修改ToolStripMenuItem
         '
         Me.修改ToolStripMenuItem.Name = "修改ToolStripMenuItem"
-        Me.修改ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.修改ToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
         Me.修改ToolStripMenuItem.Text = "图书删改"
         '
         '学生基本信息管理ToolStripMenuItem
@@ -103,7 +103,7 @@ Partial Class AdminMainForm
         '录入ToolStripMenuItem1
         '
         Me.录入ToolStripMenuItem1.Name = "录入ToolStripMenuItem1"
-        Me.录入ToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.录入ToolStripMenuItem1.Size = New System.Drawing.Size(136, 22)
         Me.录入ToolStripMenuItem1.Text = "出版社录入"
         '
         '查询修改删除ToolStripMenuItem
@@ -122,7 +122,7 @@ Partial Class AdminMainForm
         '预定ToolStripMenuItem
         '
         Me.预定ToolStripMenuItem.Name = "预定ToolStripMenuItem"
-        Me.预定ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.预定ToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
         Me.预定ToolStripMenuItem.Text = "预定登记"
         '
         '查询预定ToolStripMenuItem
@@ -141,7 +141,7 @@ Partial Class AdminMainForm
         '借阅登记ToolStripMenuItem
         '
         Me.借阅登记ToolStripMenuItem.Name = "借阅登记ToolStripMenuItem"
-        Me.借阅登记ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.借阅登记ToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
         Me.借阅登记ToolStripMenuItem.Text = "借阅登记"
         '
         '借阅查询ToolStripMenuItem
@@ -173,7 +173,7 @@ Partial Class AdminMainForm
         '
         Me.退回主界面ToolStripMenuItem.Name = "退回主界面ToolStripMenuItem"
         Me.退回主界面ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.退回主界面ToolStripMenuItem.Text = "退回主界面"
+        Me.退回主界面ToolStripMenuItem.Text = "主界面"
         '
         '退出ToolStripMenuItem
         '

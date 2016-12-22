@@ -22,33 +22,26 @@ Partial Class ReserveAdd
     '不要使用代码编辑器修改它。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.tbQty = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.tbBookId = New System.Windows.Forms.TextBox()
+        Me.tbSno = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnCancel = New System.Windows.Forms.Button()
         Me.btnConfim = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'TextBox3
+        'tbQty
         '
-        Me.TextBox3.Location = New System.Drawing.Point(151, 251)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 21)
-        Me.TextBox3.TabIndex = 26
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(151, 193)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 21)
-        Me.TextBox4.TabIndex = 25
+        Me.tbQty.Location = New System.Drawing.Point(151, 251)
+        Me.tbQty.Name = "tbQty"
+        Me.tbQty.Size = New System.Drawing.Size(100, 21)
+        Me.tbQty.TabIndex = 26
         '
         'Label3
         '
@@ -68,19 +61,19 @@ Partial Class ReserveAdd
         Me.Label4.TabIndex = 23
         Me.Label4.Text = "时间："
         '
-        'TextBox2
+        'tbBookId
         '
-        Me.TextBox2.Location = New System.Drawing.Point(151, 125)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 21)
-        Me.TextBox2.TabIndex = 22
+        Me.tbBookId.Location = New System.Drawing.Point(151, 125)
+        Me.tbBookId.Name = "tbBookId"
+        Me.tbBookId.Size = New System.Drawing.Size(100, 21)
+        Me.tbBookId.TabIndex = 22
         '
-        'TextBox1
+        'tbSno
         '
-        Me.TextBox1.Location = New System.Drawing.Point(151, 69)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 21)
-        Me.TextBox1.TabIndex = 21
+        Me.tbSno.Location = New System.Drawing.Point(151, 69)
+        Me.tbSno.Name = "tbSno"
+        Me.tbSno.Size = New System.Drawing.Size(100, 21)
+        Me.tbSno.TabIndex = 21
         '
         'Label2
         '
@@ -120,20 +113,27 @@ Partial Class ReserveAdd
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
-        Me.GroupBox1.Controls.Add(Me.TextBox3)
+        Me.GroupBox1.Controls.Add(Me.DateTimePicker1)
+        Me.GroupBox1.Controls.Add(Me.tbSno)
+        Me.GroupBox1.Controls.Add(Me.tbQty)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Controls.Add(Me.TextBox4)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
+        Me.GroupBox1.Controls.Add(Me.tbBookId)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Location = New System.Drawing.Point(55, 61)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(341, 329)
         Me.GroupBox1.TabIndex = 29
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "借书信息登记"
+        Me.GroupBox1.Text = "预定图书登记"
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Location = New System.Drawing.Point(151, 183)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(127, 21)
+        Me.DateTimePicker1.TabIndex = 27
         '
         'ReserveAdd
         '
@@ -150,15 +150,15 @@ Partial Class ReserveAdd
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents tbQty As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents tbBookId As System.Windows.Forms.TextBox
+    Friend WithEvents tbSno As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents btnCancel As System.Windows.Forms.Button
     Friend WithEvents btnConfim As System.Windows.Forms.Button
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
 End Class

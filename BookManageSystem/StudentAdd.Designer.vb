@@ -24,17 +24,17 @@ Partial Class StudentAdd
     Private Sub InitializeComponent()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.tbPassword = New System.Windows.Forms.TextBox()
+        Me.tbUser = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.tbAge = New System.Windows.Forms.TextBox()
+        Me.tbDepart = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.tbSname = New System.Windows.Forms.TextBox()
+        Me.tbSno = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.btnConfim = New System.Windows.Forms.Button()
@@ -56,8 +56,8 @@ Partial Class StudentAdd
         '
         'TabPage1
         '
-        Me.TabPage1.Controls.Add(Me.TextBox2)
-        Me.TabPage1.Controls.Add(Me.TextBox1)
+        Me.TabPage1.Controls.Add(Me.tbPassword)
+        Me.TabPage1.Controls.Add(Me.tbUser)
         Me.TabPage1.Controls.Add(Me.Label2)
         Me.TabPage1.Controls.Add(Me.Label1)
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
@@ -68,28 +68,28 @@ Partial Class StudentAdd
         Me.TabPage1.Text = "账户信息"
         Me.TabPage1.UseVisualStyleBackColor = True
         '
-        'TextBox2
+        'tbPassword
         '
-        Me.TextBox2.Location = New System.Drawing.Point(161, 169)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 21)
-        Me.TextBox2.TabIndex = 3
+        Me.tbPassword.Location = New System.Drawing.Point(161, 169)
+        Me.tbPassword.Name = "tbPassword"
+        Me.tbPassword.Size = New System.Drawing.Size(100, 21)
+        Me.tbPassword.TabIndex = 3
         '
-        'TextBox1
+        'tbUser
         '
-        Me.TextBox1.Location = New System.Drawing.Point(161, 118)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 21)
-        Me.TextBox1.TabIndex = 2
+        Me.tbUser.Location = New System.Drawing.Point(161, 118)
+        Me.tbUser.Name = "tbUser"
+        Me.tbUser.Size = New System.Drawing.Size(100, 21)
+        Me.tbUser.TabIndex = 2
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(77, 179)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(41, 12)
+        Me.Label2.Size = New System.Drawing.Size(53, 12)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "密码："
+        Me.Label2.Text = "密  码："
         '
         'Label1
         '
@@ -102,12 +102,12 @@ Partial Class StudentAdd
         '
         'TabPage2
         '
-        Me.TabPage2.Controls.Add(Me.TextBox5)
-        Me.TabPage2.Controls.Add(Me.TextBox6)
+        Me.TabPage2.Controls.Add(Me.tbAge)
+        Me.TabPage2.Controls.Add(Me.tbDepart)
         Me.TabPage2.Controls.Add(Me.Label5)
         Me.TabPage2.Controls.Add(Me.Label6)
-        Me.TabPage2.Controls.Add(Me.TextBox3)
-        Me.TabPage2.Controls.Add(Me.TextBox4)
+        Me.TabPage2.Controls.Add(Me.tbSname)
+        Me.TabPage2.Controls.Add(Me.tbSno)
         Me.TabPage2.Controls.Add(Me.Label3)
         Me.TabPage2.Controls.Add(Me.Label4)
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
@@ -118,19 +118,19 @@ Partial Class StudentAdd
         Me.TabPage2.Text = "学生信息"
         Me.TabPage2.UseVisualStyleBackColor = True
         '
-        'TextBox5
+        'tbAge
         '
-        Me.TextBox5.Location = New System.Drawing.Point(163, 233)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(100, 21)
-        Me.TextBox5.TabIndex = 11
+        Me.tbAge.Location = New System.Drawing.Point(163, 233)
+        Me.tbAge.Name = "tbAge"
+        Me.tbAge.Size = New System.Drawing.Size(100, 21)
+        Me.tbAge.TabIndex = 11
         '
-        'TextBox6
+        'tbDepart
         '
-        Me.TextBox6.Location = New System.Drawing.Point(163, 182)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(100, 21)
-        Me.TextBox6.TabIndex = 10
+        Me.tbDepart.Location = New System.Drawing.Point(163, 182)
+        Me.tbDepart.Name = "tbDepart"
+        Me.tbDepart.Size = New System.Drawing.Size(100, 21)
+        Me.tbDepart.TabIndex = 10
         '
         'Label5
         '
@@ -144,30 +144,30 @@ Partial Class StudentAdd
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(77, 182)
+        Me.Label6.Location = New System.Drawing.Point(77, 187)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(41, 12)
         Me.Label6.TabIndex = 8
         Me.Label6.Text = "院系："
         '
-        'TextBox3
+        'tbSname
         '
-        Me.TextBox3.Location = New System.Drawing.Point(163, 124)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 21)
-        Me.TextBox3.TabIndex = 7
+        Me.tbSname.Location = New System.Drawing.Point(163, 124)
+        Me.tbSname.Name = "tbSname"
+        Me.tbSname.Size = New System.Drawing.Size(100, 21)
+        Me.tbSname.TabIndex = 7
         '
-        'TextBox4
+        'tbSno
         '
-        Me.TextBox4.Location = New System.Drawing.Point(163, 73)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 21)
-        Me.TextBox4.TabIndex = 6
+        Me.tbSno.Location = New System.Drawing.Point(163, 73)
+        Me.tbSno.Name = "tbSno"
+        Me.tbSno.Size = New System.Drawing.Size(100, 21)
+        Me.tbSno.TabIndex = 6
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(79, 134)
+        Me.Label3.Location = New System.Drawing.Point(77, 127)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(41, 12)
         Me.Label3.TabIndex = 5
@@ -221,16 +221,16 @@ Partial Class StudentAdd
     Friend WithEvents TabControl1 As System.Windows.Forms.TabControl
     Friend WithEvents TabPage1 As System.Windows.Forms.TabPage
     Friend WithEvents TabPage2 As System.Windows.Forms.TabPage
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents tbPassword As System.Windows.Forms.TextBox
+    Friend WithEvents tbUser As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
+    Friend WithEvents tbAge As System.Windows.Forms.TextBox
+    Friend WithEvents tbDepart As System.Windows.Forms.TextBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents tbSname As System.Windows.Forms.TextBox
+    Friend WithEvents tbSno As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents btnConfim As System.Windows.Forms.Button

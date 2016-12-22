@@ -72,38 +72,38 @@ Partial Class Login
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("宋体", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label1.Location = New System.Drawing.Point(199, 140)
+        Me.Label1.Font = New System.Drawing.Font("隶书", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label1.Location = New System.Drawing.Point(210, 90)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(225, 35)
+        Me.Label1.Size = New System.Drawing.Size(231, 35)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "图书管理系统"
         '
         'PasswordText
         '
-        Me.PasswordText.Font = New System.Drawing.Font("宋体", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.PasswordText.Location = New System.Drawing.Point(243, 273)
+        Me.PasswordText.Font = New System.Drawing.Font("微软雅黑", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.PasswordText.Location = New System.Drawing.Point(250, 253)
         Me.PasswordText.Name = "PasswordText"
         Me.PasswordText.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.PasswordText.Size = New System.Drawing.Size(221, 31)
+        Me.PasswordText.Size = New System.Drawing.Size(221, 33)
         Me.PasswordText.TabIndex = 8
         '
         'UserText
         '
-        Me.UserText.Font = New System.Drawing.Font("宋体", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.UserText.Location = New System.Drawing.Point(243, 215)
+        Me.UserText.Font = New System.Drawing.Font("微软雅黑", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.UserText.Location = New System.Drawing.Point(250, 195)
         Me.UserText.Name = "UserText"
-        Me.UserText.Size = New System.Drawing.Size(221, 31)
+        Me.UserText.Size = New System.Drawing.Size(221, 33)
         Me.UserText.TabIndex = 7
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("宋体", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label2.Location = New System.Drawing.Point(157, 280)
+        Me.Label2.Font = New System.Drawing.Font("微软雅黑", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label2.Location = New System.Drawing.Point(164, 253)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(58, 24)
+        Me.Label2.Size = New System.Drawing.Size(62, 31)
         Me.Label2.TabIndex = 6
         Me.Label2.Text = "密码"
         '
@@ -111,27 +111,29 @@ Partial Class Login
         '
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("宋体", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label3.Location = New System.Drawing.Point(157, 222)
+        Me.Label3.Font = New System.Drawing.Font("微软雅黑", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label3.Location = New System.Drawing.Point(164, 195)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(58, 24)
+        Me.Label3.Size = New System.Drawing.Size(62, 31)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "账号"
         '
         'btnConfirm
         '
-        Me.btnConfirm.Location = New System.Drawing.Point(183, 405)
+        Me.btnConfirm.Font = New System.Drawing.Font("微软雅黑", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.btnConfirm.Location = New System.Drawing.Point(170, 412)
         Me.btnConfirm.Name = "btnConfirm"
-        Me.btnConfirm.Size = New System.Drawing.Size(75, 23)
+        Me.btnConfirm.Size = New System.Drawing.Size(114, 41)
         Me.btnConfirm.TabIndex = 9
         Me.btnConfirm.Text = "确定"
         Me.btnConfirm.UseVisualStyleBackColor = True
         '
         'btnForget
         '
-        Me.btnForget.Location = New System.Drawing.Point(365, 404)
+        Me.btnForget.Font = New System.Drawing.Font("微软雅黑", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.btnForget.Location = New System.Drawing.Point(357, 411)
         Me.btnForget.Name = "btnForget"
-        Me.btnForget.Size = New System.Drawing.Size(75, 23)
+        Me.btnForget.Size = New System.Drawing.Size(114, 42)
         Me.btnForget.TabIndex = 10
         Me.btnForget.Text = "忘记密码"
         Me.btnForget.UseVisualStyleBackColor = True
@@ -140,20 +142,21 @@ Partial Class Login
         '
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Font = New System.Drawing.Font("宋体", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label4.Location = New System.Drawing.Point(157, 338)
+        Me.Label4.Font = New System.Drawing.Font("微软雅黑", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label4.Location = New System.Drawing.Point(164, 320)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(58, 24)
+        Me.Label4.Size = New System.Drawing.Size(62, 31)
         Me.Label4.TabIndex = 11
         Me.Label4.Text = "类型"
         '
         'TypeBox
         '
+        Me.TypeBox.Font = New System.Drawing.Font("微软雅黑", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.TypeBox.FormattingEnabled = True
         Me.TypeBox.Items.AddRange(New Object() {"管理员", "学生"})
-        Me.TypeBox.Location = New System.Drawing.Point(243, 338)
+        Me.TypeBox.Location = New System.Drawing.Point(250, 318)
         Me.TypeBox.Name = "TypeBox"
-        Me.TypeBox.Size = New System.Drawing.Size(221, 20)
+        Me.TypeBox.Size = New System.Drawing.Size(221, 33)
         Me.TypeBox.TabIndex = 12
         '
         'Login
@@ -165,11 +168,11 @@ Partial Class Login
         Me.ContextMenuStrip = Me.ContextMenuStrip1
         Me.Controls.Add(Me.TypeBox)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.btnForget)
-        Me.Controls.Add(Me.btnConfirm)
         Me.Controls.Add(Me.PasswordText)
         Me.Controls.Add(Me.UserText)
+        Me.Controls.Add(Me.btnConfirm)
         Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.btnForget)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
