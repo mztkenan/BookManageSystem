@@ -72,6 +72,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="About.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="AdminMainForm.Designer.vb">
       <DependentUpon>AdminMainForm.vb</DependentUpon>
     </Compile>
@@ -84,10 +90,10 @@
     <Compile Include="BookAdd.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BookBorrow.Designer.vb">
-      <DependentUpon>BookBorrow.vb</DependentUpon>
+    <Compile Include="BookBorrowInfo.Designer.vb">
+      <DependentUpon>BookBorrowInfo.vb</DependentUpon>
     </Compile>
-    <Compile Include="BookBorrow.vb">
+    <Compile Include="BookBorrowInfo.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="BookInfoManagementForm.Designer.vb">
@@ -167,16 +173,25 @@
     <Compile Include="StudentMainForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="StudentSearchBook.Designer.vb">
+      <DependentUpon>StudentSearchBook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StudentSearchBook.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdminMainForm.resx">
       <DependentUpon>AdminMainForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BookAdd.resx">
       <DependentUpon>BookAdd.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BookBorrow.resx">
-      <DependentUpon>BookBorrow.vb</DependentUpon>
+    <EmbeddedResource Include="BookBorrowInfo.resx">
+      <DependentUpon>BookBorrowInfo.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BookInfoManagementForm.resx">
       <DependentUpon>BookInfoManagementForm.vb</DependentUpon>
@@ -214,6 +229,9 @@
     <EmbeddedResource Include="StudentMainForm.resx">
       <DependentUpon>StudentMainForm.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="StudentSearchBook.resx">
+      <DependentUpon>StudentSearchBook.vb</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="My Project\Application.myapp">
@@ -225,6 +243,15 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tulips.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hydrangeas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chrysanthemum.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

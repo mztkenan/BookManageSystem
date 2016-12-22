@@ -1,27 +1,45 @@
-﻿Public Class Login
+﻿Imports System.Data.SqlClient
+Public Class Login
 
 
 
-    Private Sub 新建ToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs)
-        TextBox1.Text = ""
-        TextBox1.Focus()
-    End Sub
 
-    Private Sub 退出ToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs)
-        End
-    End Sub
 
-    Private Sub 打开ToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs)
-        If (OpenFileDialog1.ShowDialog = Windows.Forms.DialogResult.OK) Then
-            PictureBox1.Image = Image.FromFile(OpenFileDialog1.FileName)
+
+
+
+    Private Sub btnConfirm_Click(sender As System.Object, e As System.EventArgs) Handles btnConfirm.Click
+        Dim usertype As String, sqlStr As String
+        Dim result As Integer
+        If TypeBox.Text = "管理员" Then
+            usertype = "ADMIN"
+        ElseIf TypeBox.Text = "学生" Then
+            usertype = "STUDENTUSER"
         Else
-            MsgBox("NO SUCH FILE!")
+            usertype = ""
+        End If
+        If usertype <> "" Then
+            sqlStr = "select count(*) from " & usertype & " where loginId='" & UserText.Text & "' and loginPassword='" & PasswordText.Text & "'"
+            MsgBox(sqlStr)
+            Try
+                con.Open()
+                command = New SqlCommand(sqlStr, con)
+                result = command.ExecuteScalar
+                con.Close()
+                If result = 0 Then
+                    MsgBox("账户或用户名错误！")
+                ElseIf usertype = "ADMIN" Then
+                    AdminMainForm.Show()
+                Else
+                    StudentMainForm.Show()
+                End If
+                Me.Hide()
+            Catch ex As Exception
+                MsgBox("数据库连接失败")
+                MsgBox(ex.Message)
+                con.Close()
+            End Try
 
         End If
-
-    End Sub
-
-    Private Sub 关于ToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs)
-        Form23.ShowDialog()
     End Sub
 End Class

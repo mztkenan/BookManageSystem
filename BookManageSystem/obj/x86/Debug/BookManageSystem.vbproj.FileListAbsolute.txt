@@ -9,5 +9,15 @@ c:\users\123\documents\visual studio 2010\Projects\BookManageSystem\BookManageSy
 c:\users\123\documents\visual studio 2010\Projects\BookManageSystem\BookManageSystem\obj\x86\Debug\BookManageSystem.exe
 c:\users\123\documents\visual studio 2010\Projects\BookManageSystem\BookManageSystem\obj\x86\Debug\BookManageSystem.xml
 c:\users\123\documents\visual studio 2010\Projects\BookManageSystem\BookManageSystem\obj\x86\Debug\BookManageSystem.pdb
-c:\users\123\documents\visual studio 2010\Projects\BookManageSystem\BookManageSystem\obj\x86\Debug\BookManageSystem.Form1.resources
-c:\users\123\documents\visual studio 2010\Projects\BookManageSystem\BookManageSystem\obj\x86\Debug\BookManageSystem.Form23.resources
+C:\Users\123\documents\visual studio 2010\Projects\BookManageSystem\BookManageSystem\obj\x86\Debug\BookManageSystem.AdminMainForm.resources
+C:\Users\123\documents\visual studio 2010\Projects\BookManageSystem\BookManageSystem\obj\x86\Debug\BookManageSystem.BookAdd.resources
+C:\Users\123\documents\visual studio 2010\Projects\BookManageSystem\BookManageSystem\obj\x86\Debug\BookManageSystem.BookBorrow.resources
+C:\Users\123\documents\visual studio 2010\Projects\BookManageSystem\BookManageSystem\obj\x86\Debug\BookManageSystem.BookInfoManagementForm.resources
+C:\Users\123\documents\visual studio 2010\Projects\BookManageSystem\BookManageSystem\obj\x86\Debug\BookManageSystem.BookReserve.resources
+C:\Users\123\documents\visual studio 2010\Projects\BookManageSystem\BookManageSystem\obj\x86\Debug\BookManageSystem.BorrowAdd.resources
+C:\Users\123\documents\visual studio 2010\Projects\BookManageSystem\BookManageSystem\obj\x86\Debug\BookManageSystem.PublisherAdd.resources
+C:\Users\123\documents\visual studio 2010\Projects\BookManageSystem\BookManageSystem\obj\x86\Debug\BookManageSystem.PublisherInfo.resources
+C:\Users\123\documents\visual studio 2010\Projects\BookManageSystem\BookManageSystem\obj\x86\Debug\BookManageSystem.ReserveAdd.resources
+C:\Users\123\documents\visual studio 2010\Projects\BookManageSystem\BookManageSystem\obj\x86\Debug\BookManageSystem.StudentAdd.resources
+C:\Users\123\documents\visual studio 2010\Projects\BookManageSystem\BookManageSystem\obj\x86\Debug\BookManageSystem.StudentInfoManagementForm.resources
+C:\Users\123\documents\visual studio 2010\Projects\BookManageSystem\BookManageSystem\obj\x86\Debug\BookManageSystem.StudentMainForm.resources

@@ -24,27 +24,31 @@ Partial Class AdminMainForm
     Private Sub InitializeComponent()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.图书基本信息查询ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.学生基本信息管理ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.出版社信息管理ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.图书预定管理ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.学生借阅管理ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.录入ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.修改ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.学生基本信息管理ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.登记ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.查询ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.出版社信息管理ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.录入ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.查询修改删除ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.图书预定管理ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.预定ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.查询预定ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.学生借阅管理ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.借阅登记ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.借阅查询ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.借阅归还ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.其它ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.关于ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.退回主界面ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.退出ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.图书基本信息查询ToolStripMenuItem, Me.学生基本信息管理ToolStripMenuItem, Me.出版社信息管理ToolStripMenuItem, Me.图书预定管理ToolStripMenuItem, Me.学生借阅管理ToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.图书基本信息查询ToolStripMenuItem, Me.学生基本信息管理ToolStripMenuItem, Me.出版社信息管理ToolStripMenuItem, Me.图书预定管理ToolStripMenuItem, Me.学生借阅管理ToolStripMenuItem, Me.其它ToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(644, 25)
@@ -58,34 +62,6 @@ Partial Class AdminMainForm
         Me.图书基本信息查询ToolStripMenuItem.Size = New System.Drawing.Size(116, 21)
         Me.图书基本信息查询ToolStripMenuItem.Text = "图书基本信息管理"
         '
-        '学生基本信息管理ToolStripMenuItem
-        '
-        Me.学生基本信息管理ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.登记ToolStripMenuItem, Me.查询ToolStripMenuItem})
-        Me.学生基本信息管理ToolStripMenuItem.Name = "学生基本信息管理ToolStripMenuItem"
-        Me.学生基本信息管理ToolStripMenuItem.Size = New System.Drawing.Size(116, 21)
-        Me.学生基本信息管理ToolStripMenuItem.Text = "学生基本信息管理"
-        '
-        '出版社信息管理ToolStripMenuItem
-        '
-        Me.出版社信息管理ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.录入ToolStripMenuItem1, Me.查询修改删除ToolStripMenuItem})
-        Me.出版社信息管理ToolStripMenuItem.Name = "出版社信息管理ToolStripMenuItem"
-        Me.出版社信息管理ToolStripMenuItem.Size = New System.Drawing.Size(104, 21)
-        Me.出版社信息管理ToolStripMenuItem.Text = "出版社信息管理"
-        '
-        '图书预定管理ToolStripMenuItem
-        '
-        Me.图书预定管理ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.预定ToolStripMenuItem, Me.查询预定ToolStripMenuItem})
-        Me.图书预定管理ToolStripMenuItem.Name = "图书预定管理ToolStripMenuItem"
-        Me.图书预定管理ToolStripMenuItem.Size = New System.Drawing.Size(92, 21)
-        Me.图书预定管理ToolStripMenuItem.Text = "图书预定管理"
-        '
-        '学生借阅管理ToolStripMenuItem
-        '
-        Me.学生借阅管理ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.借阅登记ToolStripMenuItem, Me.借阅查询ToolStripMenuItem, Me.借阅归还ToolStripMenuItem})
-        Me.学生借阅管理ToolStripMenuItem.Name = "学生借阅管理ToolStripMenuItem"
-        Me.学生借阅管理ToolStripMenuItem.Size = New System.Drawing.Size(92, 21)
-        Me.学生借阅管理ToolStripMenuItem.Text = "学生借阅管理"
-        '
         '录入ToolStripMenuItem
         '
         Me.录入ToolStripMenuItem.Name = "录入ToolStripMenuItem"
@@ -98,17 +74,31 @@ Partial Class AdminMainForm
         Me.修改ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.修改ToolStripMenuItem.Text = "图书删改"
         '
+        '学生基本信息管理ToolStripMenuItem
+        '
+        Me.学生基本信息管理ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.登记ToolStripMenuItem, Me.查询ToolStripMenuItem})
+        Me.学生基本信息管理ToolStripMenuItem.Name = "学生基本信息管理ToolStripMenuItem"
+        Me.学生基本信息管理ToolStripMenuItem.Size = New System.Drawing.Size(116, 21)
+        Me.学生基本信息管理ToolStripMenuItem.Text = "学生基本信息管理"
+        '
         '登记ToolStripMenuItem
         '
         Me.登记ToolStripMenuItem.Name = "登记ToolStripMenuItem"
-        Me.登记ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.登记ToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
         Me.登记ToolStripMenuItem.Text = "学生登记"
         '
         '查询ToolStripMenuItem
         '
         Me.查询ToolStripMenuItem.Name = "查询ToolStripMenuItem"
-        Me.查询ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.查询ToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
         Me.查询ToolStripMenuItem.Text = "学生删改"
+        '
+        '出版社信息管理ToolStripMenuItem
+        '
+        Me.出版社信息管理ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.录入ToolStripMenuItem1, Me.查询修改删除ToolStripMenuItem})
+        Me.出版社信息管理ToolStripMenuItem.Name = "出版社信息管理ToolStripMenuItem"
+        Me.出版社信息管理ToolStripMenuItem.Size = New System.Drawing.Size(104, 21)
+        Me.出版社信息管理ToolStripMenuItem.Text = "出版社信息管理"
         '
         '录入ToolStripMenuItem1
         '
@@ -119,8 +109,15 @@ Partial Class AdminMainForm
         '查询修改删除ToolStripMenuItem
         '
         Me.查询修改删除ToolStripMenuItem.Name = "查询修改删除ToolStripMenuItem"
-        Me.查询修改删除ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.查询修改删除ToolStripMenuItem.Size = New System.Drawing.Size(136, 22)
         Me.查询修改删除ToolStripMenuItem.Text = "出版社删改"
+        '
+        '图书预定管理ToolStripMenuItem
+        '
+        Me.图书预定管理ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.预定ToolStripMenuItem, Me.查询预定ToolStripMenuItem})
+        Me.图书预定管理ToolStripMenuItem.Name = "图书预定管理ToolStripMenuItem"
+        Me.图书预定管理ToolStripMenuItem.Size = New System.Drawing.Size(92, 21)
+        Me.图书预定管理ToolStripMenuItem.Text = "图书预定管理"
         '
         '预定ToolStripMenuItem
         '
@@ -131,8 +128,15 @@ Partial Class AdminMainForm
         '查询预定ToolStripMenuItem
         '
         Me.查询预定ToolStripMenuItem.Name = "查询预定ToolStripMenuItem"
-        Me.查询预定ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.查询预定ToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
         Me.查询预定ToolStripMenuItem.Text = "预定删改"
+        '
+        '学生借阅管理ToolStripMenuItem
+        '
+        Me.学生借阅管理ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.借阅登记ToolStripMenuItem, Me.借阅查询ToolStripMenuItem, Me.借阅归还ToolStripMenuItem})
+        Me.学生借阅管理ToolStripMenuItem.Name = "学生借阅管理ToolStripMenuItem"
+        Me.学生借阅管理ToolStripMenuItem.Size = New System.Drawing.Size(92, 21)
+        Me.学生借阅管理ToolStripMenuItem.Text = "学生借阅管理"
         '
         '借阅登记ToolStripMenuItem
         '
@@ -143,19 +147,45 @@ Partial Class AdminMainForm
         '借阅查询ToolStripMenuItem
         '
         Me.借阅查询ToolStripMenuItem.Name = "借阅查询ToolStripMenuItem"
-        Me.借阅查询ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.借阅查询ToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
         Me.借阅查询ToolStripMenuItem.Text = "借阅查询"
         '
         '借阅归还ToolStripMenuItem
         '
         Me.借阅归还ToolStripMenuItem.Name = "借阅归还ToolStripMenuItem"
-        Me.借阅归还ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.借阅归还ToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
         Me.借阅归还ToolStripMenuItem.Text = "借阅归还"
+        '
+        '其它ToolStripMenuItem
+        '
+        Me.其它ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.关于ToolStripMenuItem, Me.退回主界面ToolStripMenuItem, Me.退出ToolStripMenuItem})
+        Me.其它ToolStripMenuItem.Name = "其它ToolStripMenuItem"
+        Me.其它ToolStripMenuItem.Size = New System.Drawing.Size(44, 21)
+        Me.其它ToolStripMenuItem.Text = "其它"
+        '
+        '关于ToolStripMenuItem
+        '
+        Me.关于ToolStripMenuItem.Name = "关于ToolStripMenuItem"
+        Me.关于ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.关于ToolStripMenuItem.Text = "关于"
+        '
+        '退回主界面ToolStripMenuItem
+        '
+        Me.退回主界面ToolStripMenuItem.Name = "退回主界面ToolStripMenuItem"
+        Me.退回主界面ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.退回主界面ToolStripMenuItem.Text = "退回主界面"
+        '
+        '退出ToolStripMenuItem
+        '
+        Me.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem"
+        Me.退出ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.退出ToolStripMenuItem.Text = "退出"
         '
         'AdminMainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.BookManageSystem.My.Resources.Resources.Chrysanthemum
         Me.ClientSize = New System.Drawing.Size(644, 522)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
@@ -184,4 +214,8 @@ Partial Class AdminMainForm
     Friend WithEvents 借阅登记ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents 借阅查询ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents 借阅归还ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents 其它ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents 关于ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents 退回主界面ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents 退出ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

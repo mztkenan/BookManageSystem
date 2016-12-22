@@ -29,12 +29,14 @@ Partial Class Login
         Me.LaopoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.PasswordText = New System.Windows.Forms.TextBox()
+        Me.UserText = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnConfirm = New System.Windows.Forms.Button()
+        Me.btnForget = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.TypeBox = New System.Windows.Forms.ComboBox()
         Me.ContextMenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -77,22 +79,22 @@ Partial Class Login
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "图书管理系统"
         '
-        'TextBox2
+        'PasswordText
         '
-        Me.TextBox2.Font = New System.Drawing.Font("宋体", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(243, 273)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox2.Size = New System.Drawing.Size(221, 31)
-        Me.TextBox2.TabIndex = 8
+        Me.PasswordText.Font = New System.Drawing.Font("宋体", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.PasswordText.Location = New System.Drawing.Point(243, 273)
+        Me.PasswordText.Name = "PasswordText"
+        Me.PasswordText.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.PasswordText.Size = New System.Drawing.Size(221, 31)
+        Me.PasswordText.TabIndex = 8
         '
-        'TextBox1
+        'UserText
         '
-        Me.TextBox1.Font = New System.Drawing.Font("宋体", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(243, 215)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(221, 31)
-        Me.TextBox1.TabIndex = 7
+        Me.UserText.Font = New System.Drawing.Font("宋体", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.UserText.Location = New System.Drawing.Point(243, 215)
+        Me.UserText.Name = "UserText"
+        Me.UserText.Size = New System.Drawing.Size(221, 31)
+        Me.UserText.TabIndex = 7
         '
         'Label2
         '
@@ -116,34 +118,57 @@ Partial Class Login
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "账号"
         '
-        'Button1
+        'btnConfirm
         '
-        Me.Button1.Location = New System.Drawing.Point(183, 378)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 9
-        Me.Button1.Text = "确定"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnConfirm.Location = New System.Drawing.Point(183, 405)
+        Me.btnConfirm.Name = "btnConfirm"
+        Me.btnConfirm.Size = New System.Drawing.Size(75, 23)
+        Me.btnConfirm.TabIndex = 9
+        Me.btnConfirm.Text = "确定"
+        Me.btnConfirm.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnForget
         '
-        Me.Button2.Location = New System.Drawing.Point(365, 377)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 10
-        Me.Button2.Text = "忘记密码"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnForget.Location = New System.Drawing.Point(365, 404)
+        Me.btnForget.Name = "btnForget"
+        Me.btnForget.Size = New System.Drawing.Size(75, 23)
+        Me.btnForget.TabIndex = 10
+        Me.btnForget.Text = "忘记密码"
+        Me.btnForget.UseVisualStyleBackColor = True
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.Font = New System.Drawing.Font("宋体", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label4.Location = New System.Drawing.Point(157, 338)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(58, 24)
+        Me.Label4.TabIndex = 11
+        Me.Label4.Text = "类型"
+        '
+        'TypeBox
+        '
+        Me.TypeBox.FormattingEnabled = True
+        Me.TypeBox.Items.AddRange(New Object() {"管理员", "学生"})
+        Me.TypeBox.Location = New System.Drawing.Point(243, 338)
+        Me.TypeBox.Name = "TypeBox"
+        Me.TypeBox.Size = New System.Drawing.Size(221, 20)
+        Me.TypeBox.TabIndex = 12
         '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.BookManageSystem.My.Resources.Resources.Tulips
         Me.ClientSize = New System.Drawing.Size(650, 528)
         Me.ContextMenuStrip = Me.ContextMenuStrip1
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.TypeBox)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.btnForget)
+        Me.Controls.Add(Me.btnConfirm)
+        Me.Controls.Add(Me.PasswordText)
+        Me.Controls.Add(Me.UserText)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label1)
@@ -161,11 +186,13 @@ Partial Class Login
     Friend WithEvents LaopoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents OpenFileDialog1 As System.Windows.Forms.OpenFileDialog
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents PasswordText As System.Windows.Forms.TextBox
+    Friend WithEvents UserText As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents btnConfirm As System.Windows.Forms.Button
+    Friend WithEvents btnForget As System.Windows.Forms.Button
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents TypeBox As System.Windows.Forms.ComboBox
 
 End Class

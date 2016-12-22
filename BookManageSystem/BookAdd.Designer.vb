@@ -22,9 +22,11 @@ Partial Class BookAdd
     '不要使用代码编辑器修改它。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnCancel = New System.Windows.Forms.Button()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -34,22 +36,20 @@ Partial Class BookAdd
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
+        Me.btnConfim = New System.Windows.Forms.Button()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Button2
+        'btnCancel
         '
-        Me.Button2.Location = New System.Drawing.Point(256, 457)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 8
-        Me.Button2.Text = "取消"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnCancel.Location = New System.Drawing.Point(256, 457)
+        Me.btnCancel.Name = "btnCancel"
+        Me.btnCancel.Size = New System.Drawing.Size(75, 23)
+        Me.btnCancel.TabIndex = 8
+        Me.btnCancel.Text = "取消"
+        Me.btnCancel.UseVisualStyleBackColor = True
         '
         'TabControl1
         '
@@ -76,6 +76,22 @@ Partial Class BookAdd
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "书籍信息"
         Me.TabPage1.UseVisualStyleBackColor = True
+        '
+        'TextBox7
+        '
+        Me.TextBox7.Location = New System.Drawing.Point(161, 228)
+        Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.Size = New System.Drawing.Size(100, 21)
+        Me.TextBox7.TabIndex = 5
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(83, 232)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(41, 12)
+        Me.Label7.TabIndex = 4
+        Me.Label7.Text = "作者："
         '
         'TextBox2
         '
@@ -155,39 +171,23 @@ Partial Class BookAdd
         Me.Label4.TabIndex = 4
         Me.Label4.Text = "数量："
         '
-        'Button1
+        'btnConfim
         '
-        Me.Button1.Location = New System.Drawing.Point(108, 457)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 7
-        Me.Button1.Text = "确定"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'TextBox7
-        '
-        Me.TextBox7.Location = New System.Drawing.Point(161, 228)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(100, 21)
-        Me.TextBox7.TabIndex = 5
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(83, 232)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(41, 12)
-        Me.Label7.TabIndex = 4
-        Me.Label7.Text = "作者："
+        Me.btnConfim.Location = New System.Drawing.Point(108, 457)
+        Me.btnConfim.Name = "btnConfim"
+        Me.btnConfim.Size = New System.Drawing.Size(75, 23)
+        Me.btnConfim.TabIndex = 7
+        Me.btnConfim.Text = "确定"
+        Me.btnConfim.UseVisualStyleBackColor = True
         '
         'BookAdd
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(444, 522)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.btnCancel)
         Me.Controls.Add(Me.TabControl1)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnConfim)
         Me.Name = "BookAdd"
         Me.Text = "添加图书"
         Me.TabControl1.ResumeLayout(False)
@@ -198,7 +198,7 @@ Partial Class BookAdd
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents btnCancel As System.Windows.Forms.Button
     Friend WithEvents TabControl1 As System.Windows.Forms.TabControl
     Friend WithEvents TabPage1 As System.Windows.Forms.TabPage
     Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
@@ -212,5 +212,5 @@ Partial Class BookAdd
     Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnConfim As System.Windows.Forms.Button
 End Class
