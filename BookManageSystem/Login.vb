@@ -47,7 +47,6 @@ Public Class Login
                 MsgBox(ex.Message)
             Finally
                 con.Close()
-                MsgBox(loginType)
             End Try
         End If
     End Sub
