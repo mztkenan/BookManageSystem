@@ -137,6 +137,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="PersonalInfo.Designer.vb">
+      <DependentUpon>PersonalInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PersonalInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="PublisherAdd.Designer.vb">
       <DependentUpon>PublisherAdd.vb</DependentUpon>
     </Compile>
@@ -153,6 +159,12 @@
       <DependentUpon>ReserveAdd.vb</DependentUpon>
     </Compile>
     <Compile Include="ReserveAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturnBook.Designer.vb">
+      <DependentUpon>ReturnBook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnBook.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="StudentAdd.Designer.vb">
@@ -179,6 +191,7 @@
     <Compile Include="StudentSearchBook.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="UserState.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="About.resx">
@@ -211,6 +224,9 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="PersonalInfo.resx">
+      <DependentUpon>PersonalInfo.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PublisherAdd.resx">
       <DependentUpon>PublisherAdd.vb</DependentUpon>
     </EmbeddedResource>
@@ -219,6 +235,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ReserveAdd.resx">
       <DependentUpon>ReserveAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReturnBook.resx">
+      <DependentUpon>ReturnBook.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentAdd.resx">
       <DependentUpon>StudentAdd.vb</DependentUpon>
@@ -255,6 +274,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Desert.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\下载.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\97X58PICAY4_1024.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\49R58PICeVU_1024.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\03365165632dcdb6ac7259e0fc06e2c.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -28,8 +28,9 @@ Partial Class StudentMainForm
         Me.查询ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.查询图书详情ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.其它ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.关于ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.我的信息ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.主界面ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.关于ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.退出ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -39,7 +40,8 @@ Partial Class StudentMainForm
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.预定ToolStripMenuItem, Me.查询ToolStripMenuItem, Me.其它ToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(644, 25)
+        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(8, 2, 0, 2)
+        Me.MenuStrip1.Size = New System.Drawing.Size(856, 28)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -47,61 +49,69 @@ Partial Class StudentMainForm
         '
         Me.预定ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.预定图书ToolStripMenuItem})
         Me.预定ToolStripMenuItem.Name = "预定ToolStripMenuItem"
-        Me.预定ToolStripMenuItem.Size = New System.Drawing.Size(44, 21)
+        Me.预定ToolStripMenuItem.Size = New System.Drawing.Size(51, 24)
         Me.预定ToolStripMenuItem.Text = "预定"
         '
         '预定图书ToolStripMenuItem
         '
         Me.预定图书ToolStripMenuItem.Name = "预定图书ToolStripMenuItem"
-        Me.预定图书ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.预定图书ToolStripMenuItem.Size = New System.Drawing.Size(138, 24)
         Me.预定图书ToolStripMenuItem.Text = "预定图书"
         '
         '查询ToolStripMenuItem
         '
         Me.查询ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.查询图书详情ToolStripMenuItem})
         Me.查询ToolStripMenuItem.Name = "查询ToolStripMenuItem"
-        Me.查询ToolStripMenuItem.Size = New System.Drawing.Size(44, 21)
+        Me.查询ToolStripMenuItem.Size = New System.Drawing.Size(51, 24)
         Me.查询ToolStripMenuItem.Text = "查询"
         '
         '查询图书详情ToolStripMenuItem
         '
         Me.查询图书详情ToolStripMenuItem.Name = "查询图书详情ToolStripMenuItem"
-        Me.查询图书详情ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.查询图书详情ToolStripMenuItem.Size = New System.Drawing.Size(168, 24)
         Me.查询图书详情ToolStripMenuItem.Text = "查询图书详情"
         '
         '其它ToolStripMenuItem
         '
-        Me.其它ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.关于ToolStripMenuItem, Me.主界面ToolStripMenuItem, Me.退出ToolStripMenuItem})
+        Me.其它ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.我的信息ToolStripMenuItem, Me.主界面ToolStripMenuItem, Me.关于ToolStripMenuItem, Me.退出ToolStripMenuItem})
         Me.其它ToolStripMenuItem.Name = "其它ToolStripMenuItem"
-        Me.其它ToolStripMenuItem.Size = New System.Drawing.Size(44, 21)
+        Me.其它ToolStripMenuItem.Size = New System.Drawing.Size(51, 24)
         Me.其它ToolStripMenuItem.Text = "其它"
         '
-        '关于ToolStripMenuItem
+        '我的信息ToolStripMenuItem
         '
-        Me.关于ToolStripMenuItem.Name = "关于ToolStripMenuItem"
-        Me.关于ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.关于ToolStripMenuItem.Text = "关于"
+        Me.我的信息ToolStripMenuItem.Name = "我的信息ToolStripMenuItem"
+        Me.我的信息ToolStripMenuItem.Size = New System.Drawing.Size(138, 24)
+        Me.我的信息ToolStripMenuItem.Text = "我的信息"
         '
         '主界面ToolStripMenuItem
         '
         Me.主界面ToolStripMenuItem.Name = "主界面ToolStripMenuItem"
-        Me.主界面ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.主界面ToolStripMenuItem.Size = New System.Drawing.Size(138, 24)
         Me.主界面ToolStripMenuItem.Text = "主界面"
+        '
+        '关于ToolStripMenuItem
+        '
+        Me.关于ToolStripMenuItem.Name = "关于ToolStripMenuItem"
+        Me.关于ToolStripMenuItem.Size = New System.Drawing.Size(138, 24)
+        Me.关于ToolStripMenuItem.Text = "关于"
         '
         '退出ToolStripMenuItem
         '
         Me.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem"
-        Me.退出ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.退出ToolStripMenuItem.Size = New System.Drawing.Size(138, 24)
         Me.退出ToolStripMenuItem.Text = "退出"
         '
         'StudentMainForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.BookManageSystem.My.Resources.Resources.Desert
-        Me.ClientSize = New System.Drawing.Size(644, 522)
+        Me.BackgroundImage = Global.BookManageSystem.My.Resources.Resources._97X58PICAY4_1024
+        Me.ClientSize = New System.Drawing.Size(856, 611)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.MainMenuStrip = Me.MenuStrip1
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "StudentMainForm"
         Me.Text = "学生"
         Me.MenuStrip1.ResumeLayout(False)
@@ -119,4 +129,5 @@ Partial Class StudentMainForm
     Friend WithEvents 关于ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents 主界面ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents 退出ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents 我的信息ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

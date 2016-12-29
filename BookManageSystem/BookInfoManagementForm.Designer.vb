@@ -22,17 +22,22 @@ Partial Class BookInfoManagementForm
     '不要使用代码编辑器修改它。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.lbMessage = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.lblInput = New System.Windows.Forms.Label()
         Me.txbInput = New System.Windows.Forms.TextBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.rbBookName = New System.Windows.Forms.RadioButton()
+        Me.cbHasStorage = New System.Windows.Forms.CheckBox()
+        Me.rdPublisher = New System.Windows.Forms.RadioButton()
+        Me.rdAuthor = New System.Windows.Forms.RadioButton()
+        Me.rdBookName = New System.Windows.Forms.RadioButton()
         Me.rdBookId = New System.Windows.Forms.RadioButton()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.GroupBox2.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -41,9 +46,11 @@ Partial Class BookInfoManagementForm
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.DataGridView1)
-        Me.GroupBox2.Location = New System.Drawing.Point(50, 153)
+        Me.GroupBox2.Location = New System.Drawing.Point(67, 191)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(544, 257)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Size = New System.Drawing.Size(908, 321)
         Me.GroupBox2.TabIndex = 3
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "查询结果"
@@ -51,115 +58,165 @@ Partial Class BookInfoManagementForm
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(21, 30)
+        Me.DataGridView1.Location = New System.Drawing.Point(28, 38)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 23
-        Me.DataGridView1.Size = New System.Drawing.Size(502, 200)
+        Me.DataGridView1.Size = New System.Drawing.Size(847, 250)
         Me.DataGridView1.TabIndex = 0
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.lbMessage)
+        Me.GroupBox1.Controls.Add(Me.Button3)
+        Me.GroupBox1.Controls.Add(Me.Button2)
         Me.GroupBox1.Controls.Add(Me.Button1)
         Me.GroupBox1.Controls.Add(Me.lblInput)
         Me.GroupBox1.Controls.Add(Me.txbInput)
-        Me.GroupBox1.Controls.Add(Me.CheckBox1)
-        Me.GroupBox1.Controls.Add(Me.RadioButton2)
-        Me.GroupBox1.Controls.Add(Me.RadioButton1)
-        Me.GroupBox1.Controls.Add(Me.rbBookName)
+        Me.GroupBox1.Controls.Add(Me.cbHasStorage)
+        Me.GroupBox1.Controls.Add(Me.rdPublisher)
+        Me.GroupBox1.Controls.Add(Me.rdAuthor)
+        Me.GroupBox1.Controls.Add(Me.rdBookName)
         Me.GroupBox1.Controls.Add(Me.rdBookId)
-        Me.GroupBox1.Location = New System.Drawing.Point(50, 43)
+        Me.GroupBox1.Location = New System.Drawing.Point(67, 54)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(544, 104)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(908, 130)
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "查询图书信息"
         '
+        'lbMessage
+        '
+        Me.lbMessage.AutoSize = True
+        Me.lbMessage.ForeColor = System.Drawing.Color.Red
+        Me.lbMessage.Location = New System.Drawing.Point(800, 59)
+        Me.lbMessage.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbMessage.Name = "lbMessage"
+        Me.lbMessage.Size = New System.Drawing.Size(0, 15)
+        Me.lbMessage.TabIndex = 13
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(787, 81)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(100, 29)
+        Me.Button3.TabIndex = 12
+        Me.Button3.Text = "保存修改"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(647, 81)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(100, 29)
+        Me.Button2.TabIndex = 11
+        Me.Button2.Text = "查看所有"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(347, 82)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(100, 29)
+        Me.Button1.TabIndex = 10
+        Me.Button1.Text = "确定"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'lblInput
         '
         Me.lblInput.AutoSize = True
-        Me.lblInput.Location = New System.Drawing.Point(140, 73)
+        Me.lblInput.Location = New System.Drawing.Point(59, 91)
+        Me.lblInput.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblInput.Name = "lblInput"
-        Me.lblInput.Size = New System.Drawing.Size(35, 12)
+        Me.lblInput.Size = New System.Drawing.Size(45, 15)
         Me.lblInput.TabIndex = 6
         Me.lblInput.Text = "输入:"
         '
         'txbInput
         '
-        Me.txbInput.Location = New System.Drawing.Point(188, 67)
+        Me.txbInput.Location = New System.Drawing.Point(123, 84)
+        Me.txbInput.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txbInput.Name = "txbInput"
-        Me.txbInput.Size = New System.Drawing.Size(117, 21)
+        Me.txbInput.Size = New System.Drawing.Size(155, 25)
         Me.txbInput.TabIndex = 5
         '
-        'CheckBox1
+        'cbHasStorage
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(380, 36)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(132, 16)
-        Me.CheckBox1.TabIndex = 4
-        Me.CheckBox1.Text = "只查询在馆图书信息"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.cbHasStorage.AutoSize = True
+        Me.cbHasStorage.Location = New System.Drawing.Point(500, 45)
+        Me.cbHasStorage.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cbHasStorage.Name = "cbHasStorage"
+        Me.cbHasStorage.Size = New System.Drawing.Size(219, 24)
+        Me.cbHasStorage.TabIndex = 4
+        Me.cbHasStorage.Text = "只查询在馆图书信息"
+        Me.cbHasStorage.UseVisualStyleBackColor = True
         '
-        'RadioButton2
+        'rdPublisher
         '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(290, 35)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(59, 16)
-        Me.RadioButton2.TabIndex = 3
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "出版社"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.rdPublisher.AutoSize = True
+        Me.rdPublisher.Location = New System.Drawing.Point(380, 44)
+        Me.rdPublisher.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.rdPublisher.Name = "rdPublisher"
+        Me.rdPublisher.Size = New System.Drawing.Size(97, 24)
+        Me.rdPublisher.TabIndex = 3
+        Me.rdPublisher.TabStop = True
+        Me.rdPublisher.Text = "出版社"
+        Me.rdPublisher.UseVisualStyleBackColor = True
         '
-        'RadioButton1
+        'rdAuthor
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(208, 35)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(47, 16)
-        Me.RadioButton1.TabIndex = 2
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "作者"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.rdAuthor.AutoSize = True
+        Me.rdAuthor.Location = New System.Drawing.Point(271, 44)
+        Me.rdAuthor.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.rdAuthor.Name = "rdAuthor"
+        Me.rdAuthor.Size = New System.Drawing.Size(77, 24)
+        Me.rdAuthor.TabIndex = 2
+        Me.rdAuthor.TabStop = True
+        Me.rdAuthor.Text = "作者"
+        Me.rdAuthor.UseVisualStyleBackColor = True
         '
-        'rbBookName
+        'rdBookName
         '
-        Me.rbBookName.AutoSize = True
-        Me.rbBookName.Location = New System.Drawing.Point(128, 35)
-        Me.rbBookName.Name = "rbBookName"
-        Me.rbBookName.Size = New System.Drawing.Size(47, 16)
-        Me.rbBookName.TabIndex = 1
-        Me.rbBookName.TabStop = True
-        Me.rbBookName.Text = "书名"
-        Me.rbBookName.UseVisualStyleBackColor = True
+        Me.rdBookName.AutoSize = True
+        Me.rdBookName.Location = New System.Drawing.Point(164, 44)
+        Me.rdBookName.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.rdBookName.Name = "rdBookName"
+        Me.rdBookName.Size = New System.Drawing.Size(77, 24)
+        Me.rdBookName.TabIndex = 1
+        Me.rdBookName.TabStop = True
+        Me.rdBookName.Text = "书名"
+        Me.rdBookName.UseVisualStyleBackColor = True
         '
         'rdBookId
         '
         Me.rdBookId.AutoSize = True
-        Me.rdBookId.Location = New System.Drawing.Point(50, 35)
+        Me.rdBookId.Location = New System.Drawing.Point(60, 44)
+        Me.rdBookId.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdBookId.Name = "rdBookId"
-        Me.rdBookId.Size = New System.Drawing.Size(47, 16)
+        Me.rdBookId.Size = New System.Drawing.Size(77, 24)
         Me.rdBookId.TabIndex = 0
         Me.rdBookId.TabStop = True
         Me.rdBookId.Text = "书号"
         Me.rdBookId.UseVisualStyleBackColor = True
         '
-        'Button1
+        'Timer1
         '
-        Me.Button1.Location = New System.Drawing.Point(356, 66)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 10
-        Me.Button1.Text = "确定"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Timer1.Interval = 1000
         '
         'BookInfoManagementForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(644, 422)
+        Me.ClientSize = New System.Drawing.Size(1019, 528)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "BookInfoManagementForm"
         Me.Text = "图书信息管理"
         Me.GroupBox2.ResumeLayout(False)
@@ -172,12 +229,16 @@ Partial Class BookInfoManagementForm
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
-    Friend WithEvents RadioButton2 As System.Windows.Forms.RadioButton
-    Friend WithEvents RadioButton1 As System.Windows.Forms.RadioButton
-    Friend WithEvents rbBookName As System.Windows.Forms.RadioButton
+    Friend WithEvents cbHasStorage As System.Windows.Forms.CheckBox
+    Friend WithEvents rdPublisher As System.Windows.Forms.RadioButton
+    Friend WithEvents rdAuthor As System.Windows.Forms.RadioButton
+    Friend WithEvents rdBookName As System.Windows.Forms.RadioButton
     Friend WithEvents rdBookId As System.Windows.Forms.RadioButton
     Friend WithEvents lblInput As System.Windows.Forms.Label
     Friend WithEvents txbInput As System.Windows.Forms.TextBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents lbMessage As System.Windows.Forms.Label
+    Friend WithEvents Timer1 As System.Windows.Forms.Timer
 End Class

@@ -2,15 +2,12 @@
 Public Class ReserveAdd
 
     Private Sub btnCancel_Click(sender As System.Object, e As System.EventArgs) Handles btnCancel.Click
-        Me.Close()
+        Me.Dispose()
     End Sub
 
     Private Sub btnConfim_Click(sender As System.Object, e As System.EventArgs) Handles btnConfim.Click
         Dim sqlStr As String
         Dim result As Integer
-        'Dim dateStr As String
-        'dateStr = borrowTimePicker.Value
-        'MsgBox(dateStr)
         sqlStr = String.Format("INSERT INTO RESERVE VALUES('{0}','{1}','{2}','{3}')", tbSno.Text.Trim, tbBookId.Text.Trim, DateTimePicker1.Value, tbQty.Text.Trim)
         Try
             con.Open()
@@ -31,5 +28,12 @@ Public Class ReserveAdd
 
     Private Sub ReserveAdd_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
         DateTimePicker1.MinDate = Now.Date
+        If loginType = "student" Then
+            tbSno.Text = studentID
+            tbSno.Enabled = False
+        Else
+            tbSno.Enabled = True
+            tbSno.Text = ""
+        End If
     End Sub
 End Class

@@ -60,6 +60,27 @@ Namespace My.Resources
             End Set
         End Property
         
+        Friend ReadOnly Property _03365165632dcdb6ac7259e0fc06e2c() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("03365165632dcdb6ac7259e0fc06e2c", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property _49R58PICeVU_1024() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("49R58PICeVU_1024", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property _97X58PICAY4_1024() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("97X58PICAY4_1024", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Friend ReadOnly Property Chrysanthemum() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Chrysanthemum", resourceCulture)
@@ -84,6 +105,13 @@ Namespace My.Resources
         Friend ReadOnly Property Tulips() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Tulips", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property 下载() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("下载", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
